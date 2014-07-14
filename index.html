@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="zh-CN"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="zh-CN"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="zh-CN"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="zh-CN"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+<html lang="zh-CN"><!--<![endif]-->
+<head>
+    <title>吃破天，可能是最好用、最智慧的食品导购站点~</title>
+    <meta charset='utf-8' />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="Copyright" content="" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <!-- HTML5 shim and Respond.js, for old IE support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="js/pngfix.js"></script>
+    <![endif]-->
+<!--     <link rel="stylesheet" href="http://static.chipotian.com/static/css/xx_layout_v0.9beta.css">  -->   
+    <link rel="stylesheet" href="css/xx_layout_v0.9beta.css">  
+    <link rel="stylesheet" href="css/xx_style.css">
+    <style>
+    </style>
+
+</head>
+<body>
+    <h1 class="hide-text">吃破天</h1>
+    <!--  header start -->
+    <header class="container100 children_join">
+        <!-- 顶栏 -->
+        <div class="uinfo_bar normalize tar">
+            <div class="header_top">
+                <ul class="menu_leo">
+                    <li>
+                        <a class="first" href="/connect/auth/weibo">
+                            <em class="i_sina">&nbsp;</em>微博登录</a>
+                    </li>
+                    <li>
+                        <a href="/connect/auth/qzone">
+                            <em class="i_QQ">&nbsp;</em>QQ登录</a>
+                    </li>
+                    <li>
+                        <a href="/user/login">登录</a>
+                    </li>
+                    <li>
+                        <a href="/user/register">注册</a>
+                    </li>
+                    <li>
+                        <a href="/member/member" target="_blank" class="msg">
+                            <em class="i_member"></em>积分兑换</a>
+                    </li>
+                    <li>
+                        <a href="/client/?frm=daeh" target="_blank">
+                            <em class="i_mob">&nbsp;</em>下载App</a>
+                    </li>
+                    <li>
+                        <a class="last" href="/help/feedback?frm=top_to_help" target="_blank">客户服务</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gap"></div>
+        </div>
+        <!-- /.顶栏 -->
+        <div class="gap30"></div>
+        <!-- logo -->
+        <div id="logo" class="normalize h_headerbottom area area_block hide-text" style="background:url(img/logo.png) no-repeat center -8px">
+            美食吃破天
+        </div>
+        <!-- /.logo -->
+        <!-- search -->
+        <div id="search" class="normalize h_headerbottom area area_block tac">
+            <form id="global_search" action="" method="">
+                <input type="text" id="global_search_input" class="form-control wpct66 di" placeholder="吃破天"><button class="btn bgf40 cwhite" style="margin-left:-5px;">搜索</button>
+            </form>
+        </div>
+        <!-- /.search -->
+        <!-- info -->
+        <div id="info" class="normalize h_headerbottom area area_block tac">
+            <button class="btn btn-link btn-xs">info1</button>
+            <button class="btn btn-link btn-xs">info2</button>
+        </div>
+        <!-- /.info -->
+    </header>
+    <!--  /.header end -->
+    
+    <!-- navbar -->
+    <nav id="navbar">
+    <div class="wheader">
+        <div class="header_b">
+            <ul class="nav_new">
+                <li class="home">
+                    <a class="r_d" href="/welcome?frm=daeh">
+                        首页
+                        <span class="shining none_f">
+                        </span>
+                    </a>
+                </li>
+                <li class="guang">
+                    <a class="" href="/guang/hot?frm=daeh">
+                        今日最热
+                    </a>
+                </li>
+                <li class="dress">
+                    <a class="" href="/guang/catalog/dress?nid=11&amp;cata_id=2000000000000&amp;frm=daeh">
+                        衣服
+                        <em class="white_arrow">
+                        </em>
+                    </a>
+                    <div class="header_list" style="display: none;">
+                        <div class="header_lcon">
+                            <a class="" href="/guang/catalog/dress?nid=17&amp;cata_id=2001000000000&amp;frm=daeh">
+                                上衣
+                            </a>
+                            <a class="" href="/guang/catalog/dress?nid=19&amp;cata_id=2004000000000&amp;frm=daeh">
+                                裙子
+                            </a>
+                            <a class="" href="/guang/catalog/dress?nid=21&amp;cata_id=2006000000000&amp;frm=daeh">
+                                裤子
+                            </a>
+                            <a class="" href="/guang/catalog/dress?nid=23&amp;cata_id=2009000000000&amp;frm=daeh">
+                                内衣
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="" href="/guang/catalog/shoes?nid=13&amp;cata_id=6000000000000&amp;frm=daeh">
+                        鞋子
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/guang/catalog/bag?nid=15&amp;cata_id=5000000000000&amp;frm=daeh">
+                        包包
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/guang/catalog/access?nid=1097&amp;cata_id=7000000000000&amp;frm=daeh">
+                        配饰
+                    </a>
+                </li>
+                <li>
+                    <a class="r_r " href="/beauty?frm=daeh">
+                        美妆
+                    </a>
+                </li>
+                <li class="sale">
+                    <a class="" href="/biz/shareact/list/?frm=daeh">
+                        特卖
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/tuan/?frm=daeh">
+                        团购
+                        <em class="new">
+                            &nbsp;
+                        </em>
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/shop/?frm=daeh">
+                        好店
+                    </a>
+                </li>
+                <li class="group">
+                    <a class="" href="/magazine?frm=daeh">
+                        杂志
+                    </a>
+                </li>
+                <li class="report">
+                    <a class="" href="/club?frm=daeh">
+                        爱美丽Club
+                        <em class="white_arrow">
+                        </em>
+                    </a>
+                    <div class="header_list" style="display: none;">
+                        <div class="header_lcon">
+                            <a href="/daren?frm=daeh">
+                                达人
+                            </a>
+                            <a href="/welfare?frm=daeh">
+                                福利社
+                            </a>
+                            <a href="/biz/exo/main/?joined=1">
+                                EXO-M粉丝专区
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>  
+    </nav>
+    <!-- /.navbar -->   
+
+    <!--  main start -->
+    <div id="main" class="container1200 children_join tac" style="overflow:visible;">
+
+        <div class="gap5"></div><!-- 必须clear -->
+
+        <!-- 左块状分类 -->
+        <section id="classes_nav" class="normalize h_maintop area area_hidden">
+
+            <div id="nav" class="h_maintop">
+                <ul class="tit">
+                    <li class="mod_cate">
+                        <h2><i class="arrow_dot fr"></i><a href="http://www.17sucai.com/">手机</a><a href="http://www.17sucai.com/">数码</a><a class="hot_sub" href="http://www.17sucai.com/">合约机</a></h2>
+                        <p class="mod_cate_r"><a href="http://www.17sucai.com/">三星</a><a href="http://www.17sucai.com/">联想</a><a href="http://www.17sucai.com/">数码相机</a><a href="http://www.17sucai.com/">智能设备</a></p>
+                        <div class="mod_subcate" style="display:none;">
+                            <div class="mod_subcate_main">
+                                a
+                            </div>
+                            <div class="mod_subcate_side">
+                                b
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mod_cate">
+                        <h2><i class="arrow_dot fr"></i><a href="http://www.17sucai.com/">手机</a><a href="http://www.17sucai.com/">数码</a><a class="hot_sub" href="http://www.17sucai.com/">合约机</a></h2>
+                        <p class="mod_cate_r"><a href="http://www.17sucai.com/">三星</a><a href="http://www.17sucai.com/">联想</a><a href="http://www.17sucai.com/">数码相机</a><a href="http://www.17sucai.com/">智能设备</a></p>
+                        <div class="mod_subcate" style="display:none;">
+                            <div class="mod_subcate_main">
+                                
+                            </div>
+                            <div class="mod_subcate_side">
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mod_cate">
+                        <h2><i class="arrow_dot fr"></i><a href="http://www.17sucai.com/">手机</a><a href="http://www.17sucai.com/">数码</a><a class="hot_sub" href="http://www.17sucai.com/">合约机</a></h2>
+                        <p class="mod_cate_r"><a href="http://www.17sucai.com/">三星</a><a href="http://www.17sucai.com/">联想</a><a href="http://www.17sucai.com/">数码相机</a><a href="http://www.17sucai.com/">智能设备</a></p>
+                        <div class="mod_subcate" style="display:none;">
+                            <div class="mod_subcate_main">
+                                
+                            </div>
+                            <div class="mod_subcate_side">
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mod_cate">
+                        <h2><i class="arrow_dot fr"></i><a href="http://www.17sucai.com/">手机</a><a href="http://www.17sucai.com/">数码</a><a class="hot_sub" href="http://www.17sucai.com/">合约机</a></h2>
+                        <p class="mod_cate_r"><a href="http://www.17sucai.com/">三星</a><a href="http://www.17sucai.com/">联想</a><a href="http://www.17sucai.com/">数码相机</a><a href="http://www.17sucai.com/">智能设备</a></p>
+                        <div class="mod_subcate" style="display:none;">
+                            <div class="mod_subcate_main">
+                                
+                            </div>
+                            <div class="mod_subcate_side">
+                                
+                            </div>
+                        </div>
+                    </li>
+                    <li class="mod_cate">
+                        <h2><i class="arrow_dot fr"></i><a href="http://www.17sucai.com/">手机</a><a href="http://www.17sucai.com/">数码</a><a class="hot_sub" href="http://www.17sucai.com/">合约机</a></h2>
+                        <p class="mod_cate_r"><a href="http://www.17sucai.com/">三星</a><a href="http://www.17sucai.com/">联想</a><a href="http://www.17sucai.com/">数码相机</a><a href="http://www.17sucai.com/">智能设备</a></p>
+                        <div class="mod_subcate" style="display:none;">
+                            <div class="mod_subcate_main">
+                                
+                            </div>
+                            <div class="mod_subcate_side">
+                                
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /.左块状分类 -->
+
+        <!-- 轮播与广告位 -->
+        <article id="ads" class="normalize h_maintop area area_block">
+            <div class="main_visual">
+                <div class="flicking_con">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                </div>
+                <div class="main_image">
+                    <ul>
+                        <li><a href="" class="img_3"></a></li>
+                        <li><a href="" class="img_2"></a></li>
+                        <li><a href="" class="img_5"></a></li>
+                        <li><a href="" class="img_4"></a></li>
+                        <li><a href="" class="img_5"></a></li>
+                    </ul>
+                    <a href="javascript:void(0);" id="btn_prev"></a>
+                    <a href="javascript:void(0);" id="btn_next"></a>
+                </div>
+            </div>
+            <!--main_visual end-->
+            <ul class="unstyled adblocks">
+                <li class="item area"><a href=""><img src="img/ad1.png" alt="" title="" /></a></li>
+                <li class="item area"><a href=""><img src="img/ad2.png" alt="" title="" /></a></li>
+                <li class="item area"><a href=""><img src="img/ad3.png" alt="" title="" /></a></li>
+                <li class="item area"><a href=""><img src="img/ad4.png" alt="" title="" /></a></li>
+            </ul>
+            <div class="gap"></div>
+        </article>
+        <!-- /.轮播与广告位 -->
+
+        <!-- 专题 -->
+        <aside id="topics" class="normalize h_maintop area area_block">
+            <ul class="unstyled tar">
+                <li class="zhuanti_li area wpct100 area_wpct50">
+                    <a href="">
+                    <h2 class="hide-text">我渴了</h2>
+                    <img src="img/right_ad1.png" alt="" title=""/></a>
+                </li>
+                <li class="zhuanti_li area wpct100 area_wpct50">
+                    <a href="">
+                    <h2 class="hide-text">我渴了</h2>
+                    <img src="img/right_ad2.png" alt="" title=""/></a>
+                </li>
+                <li class="zhuanti_li area wpct100 area_wpct50">
+                    <a href="">
+                    <h2 class="hide-text">我渴了</h2>
+                    <img src="img/right_ad3.png" alt="" title=""/></a>
+                </li>
+                <li class="zhuanti_li area wpct100 area_wpct50" style="margin-top:20px;">
+                    <a href="">
+                    <h2 class="hide-text">我渴了</h2>
+                    <img src="img/right_ad4.png" alt="" title=""/></a>
+                </li>
+            </ul>
+        </aside>
+        <!-- /.专题 -->
+
+        <!-- 栏目 -->
+        <div class="container1200 normalize">
+            <div class="wel_tle"><!-- 栏目名 -->
+                <h2 class="hide-text">
+                    <span class="ico1"></span>人气推荐单品
+                </h2>
+            </div>
+            <ul class="list_ul unstyled"><!-- 商品列表 -->
+                <li>
+                    <div class="s_picBox"><!-- 图片 -->
+                        <a class="s_pic" href="/share/item/2895058025?trc=wlc_rec_0" target="_blank"
+                        title="告别臃肿行李箱 旅行也要潮起来">
+                            <img src="http://d06.res.meilishuo.net/pic/_o/f9/7d/dc2ef90d4596dddb283b862e7e66_640_900.c8.jpg_533bb28e_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt"><!-- 介绍文字 -->
+                        <a href="/share/item/2895058025?trc=wlc_rec_0" target="_blank">
+                            告别臃肿行李箱 旅行也要潮起来</a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red"><!-- 价格 -->
+                            ¥168.00</span>
+                        <span class="price"><!-- 原价 -->
+                            ¥336.00</span>
+                    </p>
+                    <p>195人已购买</p>
+                </li>
+                <li>
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/share/item/2849639379?trc=wlc_rec_1" target="_blank"
+                        title="甜美韩范字母图案T恤">
+                            <img src="http://imgtest.meiliworks.com/pic/_o/c8/2c/10e18dac71b57dba39e7a21dba55_640_900.c8.jpg_4eaa677b_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/share/item/2849639379?trc=wlc_rec_1" target="_blank">
+                            甜美韩范字母图案T恤
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥49.20
+                        </span>
+                        <span class="price">
+                            ¥120.00
+                        </span>
+                    </p>
+                    <p>
+                        1110人已购买
+                    </p>
+                </li>
+                <li>
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/share/item/2885632503?trc=wlc_rec_2" target="_blank"
+                        title="单颗珍珠 简约百搭项链">
+                            <img src="http://d04.res.meilishuo.net/pic/_o/ac/84/01442487738200b51ce4e2606a02_700_1050.c8.jpg_497b10f7_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/share/item/2885632503?trc=wlc_rec_2" target="_blank">
+                            单颗珍珠 简约百搭项链
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥55.30
+                        </span>
+                        <span class="price">
+                            ¥79.00
+                        </span>
+                    </p>
+                    <p>
+                        317人已购买
+                    </p>
+                </li>
+                <li>
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/share/item/2766725457?trc=wlc_rec_3" target="_blank"
+                        title="约会必备连衣裙">
+                            <img src="http://d03.res.meilishuo.net/pic/_o/6a/78/47d87d0e205828e5f5591da1ca2a_640_900.c8.jpg_765c1962_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/share/item/2766725457?trc=wlc_rec_3" target="_blank">
+                            约会必备连衣裙
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥108.58
+                        </span>
+                        <span class="price">
+                            ¥178.00
+                        </span>
+                    </p>
+                    <p>
+                        382人已购买
+                    </p>
+                </li>
+                <li>
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/share/item/2909869939?trc=wlc_rec_4" target="_blank"
+                        title="真皮小花朵凉鞋">
+                            <img src="http://d05.res.meilishuo.net/pic/_o/6e/34/6de3717547a0dd8b70c272018d67_640_900.c8.jpg_e5cf6ffe_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/share/item/2909869939?trc=wlc_rec_4" target="_blank">
+                            真皮小花朵凉鞋
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥79.00
+                        </span>
+                        <span class="price">
+                            ¥158.00
+                        </span>
+                    </p>
+                    <p>
+                        248人已购买
+                    </p>
+                </li>
+                <li class="last">
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/share/item/2866857255?trc=wlc_rec_5" target="_blank"
+                        title="经典白色破洞牛仔裤">
+                            <img src="http://d01.res.meilishuo.net/pic/_o/bd/12/3808930049a0300a43bb9de21469_640_900.c8.jpg_b72e1bfb_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/share/item/2866857255?trc=wlc_rec_5" target="_blank">
+                            经典白色破洞牛仔裤
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥75.60
+                        </span>
+                        <span class="price">
+                            ¥108.00
+                        </span>
+                    </p>
+                    <p>
+                        647人已购买
+                    </p>
+                </li>
+                <li>
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/prom/item/2242041999?trc=wlc_rec_6" target="_blank"
+                        title="千颂伊同款~美肤更养肤！PF79水凝气垫BB霜">
+                            <img src="http://d04.res.meilishuo.net/pic/_o/b0/69/a8d868052f086d4d705869695a1e_640_900.c8.jpg_644ddd2d_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/prom/item/2242041999?trc=wlc_rec_6" target="_blank">
+                            千颂伊同款~美肤更养肤！PF79水凝气垫BB霜
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥99.00
+                        </span>
+                        <span class="price">
+                            ¥459.00
+                        </span>
+                    </p>
+                    <p>
+                        3659人已购买
+                    </p>
+                </li>
+                <li>
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/prom/item/2723603776?trc=wlc_rec_7" target="_blank"
+                        title="来自星星的你同款 四季物语 悦色水润唇膏 3.8g">
+                            <img src="http://d05.res.meilishuo.net/pic/_o/e0/99/7b52f050ad604f8eecc682aaec32_640_900.c6.jpg_4a2267ea_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/prom/item/2723603776?trc=wlc_rec_7" target="_blank">
+                            来自星星的你同款 四季物语 悦色水润唇膏 3.8g
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥29.00
+                        </span>
+                        <span class="price">
+                            ¥166.00
+                        </span>
+                    </p>
+                    <p>
+                        6220人已购买
+                    </p>
+                </li>
+                <li>
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/prom/item/2795010532?trc=wlc_rec_8" target="_blank"
+                        title="不做油物，做尤物！3CE 猪油膏">
+                            <img src="http://d06.res.meilishuo.net/pic/_o/6a/28/f031569ee867ea0fc15ead9d25aa_640_900.c6.jpg_85b65b58_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/prom/item/2795010532?trc=wlc_rec_8" target="_blank">
+                            不做油物，做尤物！3CE 猪油膏
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥69.00
+                        </span>
+                        <span class="price">
+                            ¥198.00
+                        </span>
+                    </p>
+                    <p>
+                        727人已购买
+                    </p>
+                </li>
+                <li>
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/prom/item/2855465813?trc=wlc_rec_9" target="_blank"
+                        title="韩国销量150000件！Scinic海洋水动力卸妆液150ml">
+                            <img src="http://d05.res.meilishuo.net/pic/_o/2a/3c/c3b8ebc853898f6821dfba8387c7_640_900.c8.jpg_7ed1833a_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/prom/item/2855465813?trc=wlc_rec_9" target="_blank">
+                            韩国销量150000件！Scinic海洋水动力卸妆液150ml
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥49.00
+                        </span>
+                        <span class="price">
+                            ¥69.00
+                        </span>
+                    </p>
+                    <p>
+                        42人已购买
+                    </p>
+                </li>
+                <li>
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/prom/item/2503483647?trc=wlc_rec_10" target="_blank"
+                        title="轻松洁面0负担！DHC 深层橄榄卸妆油200ml">
+                            <img src="http://d01.res.meilishuo.net/pic/_o/e3/f9/7dbe5799b3eedb8a70a5506eff3f_640_900.c6.jpg_ec65b9f5_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/prom/item/2503483647?trc=wlc_rec_10" target="_blank">
+                            轻松洁面0负担！DHC 深层橄榄卸妆油200ml
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥129.00
+                        </span>
+                        <span class="price">
+                            ¥218.00
+                        </span>
+                    </p>
+                    <p>
+                        561人已购买
+                    </p>
+                </li>
+                <li class="last">
+                    <div class="s_picBox">
+                        <a class="s_pic" href="/prom/item/2581562025?trc=wlc_rec_11" target="_blank"
+                        title="韩国最畅销的洁面乳！TheFaceShop樱桃芦荟洁面乳">
+                            <img src="http://imgtest.meiliworks.com/pic/_o/3a/2d/5e2792e40a02051ac1b3e8513cb3_640_900.c8.jpg_64e890f4_s2_180_255.jpg">
+                        </a>
+                    </div>
+                    <p class="txt">
+                        <a href="/prom/item/2581562025?trc=wlc_rec_11" target="_blank">
+                            韩国最畅销的洁面乳！TheFaceShop樱桃芦荟洁面乳
+                        </a>
+                    </p>
+                    <p class="price_box">
+                        <span class="price_red">
+                            ¥28.00
+                        </span>
+                        <span class="price">
+                            ¥39.00
+                        </span>
+                    </p>
+                    <p>
+                        4553人已购买
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!-- /.栏目 -->
+        
+        <div class="normalize hide" id="ajax_load_content"><!-- 无限加载提示 -->
+            <div class="ajax_loading" id="loading">Wait a moment... it's loading!</div>
+            <div class="ajax_loading" id="nomoreresults">Sorry, no more results for your pagination demo.</div>
+        </div>
+    </div>
+    <!--  /.main end -->
+
+    <div class="gap50"></div><!-- temp 分隔 -->
+
+    <!--  footer start -->
+    <footer id="footer" class="container100 h120">
+
+        <ul>
+            <li><a href="">item1</a></li>
+            <li><a href="">item1</a></li>
+            <li><a href="">item1</a></li>
+            <li><a href="">item1</a></li>
+            <li><a href="">item1</a></li>
+            <li><a href="">item1</a></li>
+            <li><a href="">item1</a></li>
+            <li><a href="">item1</a></li>
+        </ul>
+    </footer>
+
+    <!--  /.footer end -->
+
+<!--[if gte IE 9]><!-->
+<script src="js/jquery-2.0.3.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/jquery.touchSlider.js"></script>
+<script type="text/javascript" src="js/scrollpagination.js"></script>
+
+<script type="text/javascript">
+
+//图片懒加载
+$(function() {
+     $("img.lazy").lazyload({
+     	placeholder : "http://www.zhangxinxu.com/study/image/loading.gif",
+     	effect : "fadeIn", 
+     	threshold : 100 //敏感度，还差100load
+     });
+});
+
+//滚动时导航条停留顶部
+$(function() {
+    var elm = $('#navbar');
+    var startPos = $(elm).offset().top;//200较之原来的$(elm).offset().top好，原来的代码一滚动就到顶固定
+    $.event.add(window, "scroll", function() {
+        var otop = $(window).scrollTop();
+        $(elm).css('position',((otop) > startPos) ? 'fixed' : 'static');
+    });
+});
+
+
+//块状导航
+$("#nav .tit").slide({
+    type:"menu",
+    titCell:".mod_cate",
+    targetCell:".mod_subcate",
+    delayTime:0,
+    triggerTime:10,
+    defaultPlay:false,
+    returnDefault:true
+});
+
+//轮播配置
+$(document).ready(function(){
+
+    $(".main_visual").hover(function(){
+        $("#btn_prev,#btn_next").fadeIn()
+    },function(){
+        $("#btn_prev,#btn_next").fadeOut()
+    });
+    
+    $dragBln = false;
+    
+    $(".main_image").touchSlider({
+        flexible : true,
+        speed : 200,
+        btn_prev : $("#btn_prev"),
+        btn_next : $("#btn_next"),
+        paging : $(".flicking_con a"),
+        counter : function (e){
+            $(".flicking_con a").removeClass("on").eq(e.current-1).addClass("on");
+        }
+    });
+    
+    $(".main_image").bind("mousedown", function() {
+        $dragBln = false;
+    });
+    
+    $(".main_image").bind("dragstart", function() {
+        $dragBln = true;
+    });
+    
+    $(".main_image a").click(function(){
+        if($dragBln) {
+            return false;
+        }
+    });
+    
+    timer = setInterval(function(){
+        $("#btn_next").click();
+    }, 5000);
+    
+    $(".main_visual").hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        },5000);
+    });
+    
+    $(".main_image").bind("touchstart",function(){
+        clearInterval(timer);
+    }).bind("touchend", function(){
+        timer = setInterval(function(){
+            $("#btn_next").click();
+        }, 5000);
+    });
+    
+});
+
+//ajax_scroll_load_more
+$(function(){
+    $('#ajax_load_content').scrollPagination({
+        'contentPage': '--ajax_load_more.html', // the url you are fetching the results
+        'contentData': {}, // these are the variables you can pass to the request, for example: children().size() to know which page you are
+        'scrollTarget': $(window), // who gonna scroll? in this example, the full window
+        'heightOffset': 0, // it gonna request when scroll is n pixels before the page ends
+        'beforeLoad': function(){ // before load function, you can display a preloader div
+            $('#loading').fadeIn(); 
+        },
+        'afterLoad': function(elementsLoaded){ // after loading content, you can use this function to animate your new elements
+             $('#loading').fadeOut();
+             var i = 0;
+             $(elementsLoaded).fadeInWithDelay();
+             if ($('#ajax_load_content').children().size() > 100){ // if more than 100 results already loaded, then stop pagination (only for testing)
+                $('#nomoreresults').fadeIn();
+                $('#ajax_load_content').stopScrollPagination();
+             }
+        }
+    });
+    
+    // code for fade in element by element
+    $.fn.fadeInWithDelay = function(){
+        var delay = 0;
+        return this.each(function(){
+            $(this).delay(delay).animate({opacity:1}, 200);
+            delay += 100;
+        });
+    };
+           
+});
+
+</script>
+
+</body>
+</html>
