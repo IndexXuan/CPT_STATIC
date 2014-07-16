@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6" lang="zh-CN"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="zh-CN"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="zh-CN"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" lang="zh-CN"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+<html lang="zh-CN"><!--<![endif]-->
+<head>
+    <title>吃破天，可能是最好用、最智慧的食品导购站点~</title>
+    <meta charset='utf-8' />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="Copyright" content="" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <!-- HTML5 shim and Respond.js, for old IE support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="http://static.chipotian.com/static/js/html5.js"></script>
+    <script src="http://static.chipotian.com/static/js/respond.min.js"></script>
+    <script src="http://static.chipotian.com/static/js/jquery-1.10.2.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="http://static.chipotian.com/static/js/pngfix.js"></script>
+    <![endif]-->
+<!--     <link rel="stylesheet" href="http://static.chipotian.com/static/css/bootstrap.min.css"> 需要的话打开-->
+    <link rel="stylesheet" href="http://static.chipotian.com/static/css/xx_layout_v0.9beta.css">
+    <link rel="stylesheet" href="http://static.chipotian.com/static/css/common.css">
+    <style>
+    .h_main{height:800px;} /* temp */
+    .h_cont{height:650px;} /* temp */
+    .breadcrumb {
+        padding:8px 15px;
+        margin-bottom:20px;
+        list-style:none;
+        background-color:#f5f5f5;
+        border-radius:4px;
+    }
+    .breadcrumb li {
+        display:inline-block;
+        *display: inline;
+        *border-right: 1px solid #aaa;
+        *margin-left:10px;
+        *padding-right: 4px;
+    }
+    .breadcrumb>li+li:before {
+        padding:0 5px;
+        color:#ccc;
+        content:"/\00a0";
+    }
+    .breadcrumb>.active {
+        color:#777;
+    }
+    </style>
+
+</head>
+<body>
+    <h1 class="hide-text">吃破天</h1>
+    <!--  header start -->
+    <header class="container100 children_join">
+        <!-- 顶栏 -->
+        <div class="uinfo_bar normalize tar">
+            <div class="header_top">
+                <ul class="menu_leo">
+                    <li>
+                        <a class="first" href="/connect/auth/weibo">
+                            <em class="i_sina">&nbsp;</em>微博登录</a>
+                    </li>
+                    <li>
+                        <a href="/connect/auth/qzone">
+                            <em class="i_QQ">&nbsp;</em>QQ登录</a>
+                    </li>
+                    <li>
+                        <a href="/user/login">登录</a>
+                    </li>
+                    <li>
+                        <a href="/user/register">注册</a>
+                    </li>
+                    <li>
+                        <a href="/member/member" target="_blank" class="msg">
+                            <em class="i_member"></em>积分兑换</a>
+                    </li>
+                    <li>
+                        <a href="/client/?frm=daeh" target="_blank">
+                            <em class="i_mob">&nbsp;</em>下载App</a>
+                    </li>
+                    <li>
+                        <a class="last" href="/help/feedback?frm=top_to_help" target="_blank">客户服务</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="gap"></div>
+        </div>
+        <!-- /.顶栏 -->
+        <div class="gap30"></div>
+        <!-- logo -->
+        <div id="logo" class="normalize h_headerbottom area area_block hide-text" style="background:url(img/logo.png) no-repeat center -8px">
+            美食吃破天
+        </div>
+        <!-- /.logo -->
+        <!-- search -->
+        <div id="search" class="normalize h_headerbottom area area_block tac">
+            <form id="global_search" action="" method="">
+                <input type="text" id="global_search_input" class="form-control wpct66 di" placeholder="吃破天"><button class="btn bgf40 cwhite" style="margin-left:-5px;">搜索</button>
+            </form>
+        </div>
+        <!-- /.search -->
+        <!-- info -->
+        <div id="info" class="normalize h_headerbottom area area_block tac">
+            <button class="btn btn-link btn-xs">info1</button>
+            <button class="btn btn-link btn-xs">info2</button>
+        </div>
+        <!-- /.info -->
+    </header>
+    <!--  /.header end -->
+    
+    <!-- navbar -->
+    <nav id="navbar">
+    <div class="wheader">
+        <div class="header_b">
+            <ul class="nav_new">
+                <li class="home">
+                    <a class="r_d" href="/welcome?frm=daeh">
+                        首页
+                        <span class="shining none_f">
+                        </span>
+                    </a>
+                </li>
+                <li class="guang">
+                    <a class="" href="/guang/hot?frm=daeh">
+                        今日最热
+                    </a>
+                </li>
+                <li class="dress">
+                    <a class="" href="/guang/catalog/dress?nid=11&amp;cata_id=2000000000000&amp;frm=daeh">
+                        衣服
+                        <em class="white_arrow">
+                        </em>
+                    </a>
+                    <div class="header_list" style="display: none;">
+                        <div class="header_lcon">
+                            <a class="" href="/guang/catalog/dress?nid=17&amp;cata_id=2001000000000&amp;frm=daeh">
+                                上衣
+                            </a>
+                            <a class="" href="/guang/catalog/dress?nid=19&amp;cata_id=2004000000000&amp;frm=daeh">
+                                裙子
+                            </a>
+                            <a class="" href="/guang/catalog/dress?nid=21&amp;cata_id=2006000000000&amp;frm=daeh">
+                                裤子
+                            </a>
+                            <a class="" href="/guang/catalog/dress?nid=23&amp;cata_id=2009000000000&amp;frm=daeh">
+                                内衣
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a class="" href="/guang/catalog/shoes?nid=13&amp;cata_id=6000000000000&amp;frm=daeh">
+                        鞋子
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/guang/catalog/bag?nid=15&amp;cata_id=5000000000000&amp;frm=daeh">
+                        包包
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/guang/catalog/access?nid=1097&amp;cata_id=7000000000000&amp;frm=daeh">
+                        配饰
+                    </a>
+                </li>
+                <li>
+                    <a class="r_r " href="/beauty?frm=daeh">
+                        美妆
+                    </a>
+                </li>
+                <li class="sale">
+                    <a class="" href="/biz/shareact/list/?frm=daeh">
+                        特卖
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/tuan/?frm=daeh">
+                        团购
+                        <em class="new">
+                            &nbsp;
+                        </em>
+                    </a>
+                </li>
+                <li>
+                    <a class="" href="/shop/?frm=daeh">
+                        好店
+                    </a>
+                </li>
+                <li class="group">
+                    <a class="" href="/magazine?frm=daeh">
+                        杂志
+                    </a>
+                </li>
+                <li class="report">
+                    <a class="" href="/club?frm=daeh">
+                        爱美丽Club
+                        <em class="white_arrow">
+                        </em>
+                    </a>
+                    <div class="header_list" style="display: none;">
+                        <div class="header_lcon">
+                            <a href="/daren?frm=daeh">
+                                达人
+                            </a>
+                            <a href="/welfare?frm=daeh">
+                                福利社
+                            </a>
+                            <a href="/biz/exo/main/?joined=1">
+                                EXO-M粉丝专区
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>  
+    </nav>
+    <!-- /.navbar -->   
+    
+    <!-- main start -->
+    <div id="main" class="container1200 children_join">
+        <div class="gap20"></div>
+        <!-- history -->
+        <ol class="breadcrumb normalize">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Library</a></li>
+          <li class="active">Data</li>
+        </ol>
+        <!-- /.history -->
+        <!--  left start 需要你写的开始-->
+        <div id="left-side" class="area area_block wpct70 normalize">
+            <div class="title">
+                <h2>title</h2>
+            </div>
+            <div class="content h_cont">
+             content
+            </div>
+            <div class="comment">
+             comment
+            </div>
+        </div>
+        <!-- /.left end -->
+        
+        <!-- right start -->
+        <aside id="right-side" class="area area_block wpct25 normalize">
+        aside
+        </aside>
+        <!-- /.right end 需要你写的结束-->
+    </div>
+    <!-- /.main end -->
+
+    <!--  footer start -->
+    <footer class="footer" role="footer">
+        <div class="foot_con">
+            <div class="f_list service_info">
+                <div class="kefu">
+                    <span class="tel_ico">
+                    </span>
+                    <p class="f20">
+                        4000-800-577
+                    </p>
+                    <p class="f14 mt4">
+                        美丽说客服热线
+                    </p>
+                </div>
+                <ol class="business">
+                    <li>
+                        周一至周日：08:00-22:00
+                    </li>
+                </ol>
+            </div>
+            <div class="f_list">
+                <h4>
+                    用户帮助
+                </h4>
+                <ul>
+                    <li>
+                        <a href="/help/" target="_blank">
+                            新手指南
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/mlsmapinfo/" target="_blank">
+                            网站地图
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/help/feedback" target="_blank">
+                            意见反馈
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_list">
+                <h4>
+                    关于我们
+                </h4>
+                <ul>
+                    <li>
+                        <a href="/aboutus?sl=h3" target="_blank">
+                            关于美丽说
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/aboutus/contactus?sl=h3" target="_blank">
+                            联系我们
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/aboutus/joinus?sl=h3" target="_blank">
+                            加入美丽说
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.meilishuo.com/shop/settled/index" target="_blank">
+                            商家入驻
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://pro.meilishuo.com" target="_blank">
+                            商家推广
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_list">
+                <h4>
+                    关注我们
+                </h4>
+                <ul>
+                    <li class="sina_attention">
+                        <a href="http://t.sina.com.cn/meilishuo" target="_blank">
+                            <span class="i_sina">
+                                &nbsp;
+                            </span>
+                            新浪微博
+                        </a>
+                        <div class="attention">
+                            一键关注新浪微博
+                            <wb:follow-button uid="1718455577" type="red_1" width="67" height="24">
+                                <span style="background:url(http://timg.sjs.sinajs.cn/t4/appstyle/widget/images/library/base/loading1.gif) no-repeat;height:18px;padding:0 0 2px 20px;">
+                                    Loading...
+                                </span>
+                            </wb:follow-button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="http://user.qzone.qq.com/1379986183/" target="_blank">
+                            <span class="i_qzone">
+                                &nbsp;
+                            </span>
+                            QQ空间
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://t.qq.com/meilishuo" target="_blank">
+                            <span class="i_tx">
+                                &nbsp;
+                            </span>
+                            腾讯微博
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="f_list qr-code">
+                <h4>
+                    美丽说微信服务号
+                </h4>
+                <img src="http://i.meilishuo.net/css/images/header/qrcode-new.jpg" alt="美丽说服务号二维码">
+            </div>
+            <div class="f_list weixin_code">
+                <h4>
+                    美丽说客户端下载
+                </h4>
+                <a class="client_pic" href="/client/" target="_blank">
+                </a>
+            </div>
+            <div class="gap">
+            </div>
+            <div class="rolling">
+                <h4 class="f_links">
+                    友情链接：
+                </h4>
+                <ul id="link_slide">
+                    <li>
+                        <a href="http://lady.qq.com/" target="_blank">
+                            腾讯女性
+                        </a>
+                        <a href="http://www.liebiao.com/" target="_blank">
+                            列表网
+                        </a>
+                        <a href="http://www.pclady.com.cn/" target="_blank">
+                            太平洋女性网
+                        </a>
+                        <a href="http://www.duobaohui.com" target="_blank">
+                            多宝汇
+                        </a>
+                        <a href="http://www.7y7.com/" target="_blank">
+                            七丽女性网
+                        </a>
+                        <a href="http://www.kuwo.cn" target="_blank">
+                            酷我音乐
+                        </a>
+                        <a href="http://www.ladymax.cn" target="_blank">
+                            LADYMAX时尚网
+                        </a>
+                        <a href="http://www.kongjie.com" target="_blank">
+                            空姐网
+                        </a>
+                        <a href="http://www.china-ef.com/" target="_blank">
+                            中国品牌服装网
+                        </a>
+                        <a href="http://www.topit.me/" target="_blank">
+                            优美网
+                        </a>
+                        <a href="http://www.junzimen.com/" target="_blank">
+                            男士时尚
+                        </a>
+                        <a href="http://www.haxiu.com " target="_blank">
+                            哈秀时尚网
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.yue365.com/" target="_blank">
+                            365音乐网
+                        </a>
+                        <a href="http://www.wed114.cn" target="_blank">
+                            婚纱摄影
+                        </a>
+                        <a href="http://www.kela.cn/" target="_blank">
+                            珂兰钻石
+                        </a>
+                        <a href="http://info.china.alibaba.com/" target="_blank">
+                            商业资讯
+                        </a>
+                        <a href="http://baike.china.alibaba.com/" target="_blank">
+                            阿里巴巴生意经
+                        </a>
+                        <a href="http://www.jiaju.com/" target="_blank">
+                            家居就
+                        </a>
+                        <a href="http://www.meilele.com/" target="_blank">
+                            家具网
+                        </a>
+                        <a href="http://www.ebrun.com/" target="_blank">
+                            亿邦动力
+                        </a>
+                        <a href="http://www.aibang.com/" target="_blank">
+                            爱帮网
+                        </a>
+                        <a href="http://club.china.alibaba.com/" target="_blank">
+                            商人论坛
+                        </a>
+                        <a href="http://www.51hejia.com/" target="_blank">
+                            和家网
+                        </a>
+                        <a href="http://www.zhubajie.com/" target="_blank">
+                            猪八戒网
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.letao.com" target="_blank">
+                            乐淘网
+                        </a>
+                        <a href="http://quan.163.com" target="_blank">
+                            优惠券
+                        </a>
+                        <a href="http://www.appchina.com" target="_blank">
+                            应用汇
+                        </a>
+                        <a href="http://www.s.cn/" target="_blank">
+                            名鞋库
+                        </a>
+                        <a href="http://www.meilishuo.com/huodong/meizhuang" target="_blank">
+                            爱美赏
+                        </a>
+                        <a href="http://china.makepolo.com/" target="_blank">
+                            马可波罗
+                        </a>
+                        <a href="http://www.uzai.com" target="_blank">
+                            悠哉旅游网
+                        </a>
+                        <a href="http://lady.poco.cn/ " target="_blank">
+                            POCO女性
+                        </a>
+                        <a href="http://www.tianqi.com" target="_blank">
+                            天气预报
+                        </a>
+                        <a href="http://www.leho.com/" target="_blank">
+                            爱乐活
+                        </a>
+                        <a href="http://www.miyabaobei.com/" target="_blank">
+                            蜜芽宝贝
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://lady.qq.com/" target="_blank">
+                            腾讯女性
+                        </a>
+                        <a href="http://www.liebiao.com/" target="_blank">
+                            列表网
+                        </a>
+                        <a href="http://www.pclady.com.cn/" target="_blank">
+                            太平洋女性网
+                        </a>
+                        <a href="http://www.duobaohui.com" target="_blank">
+                            多宝汇
+                        </a>
+                        <a href="http://www.7y7.com/" target="_blank">
+                            七丽女性网
+                        </a>
+                        <a href="http://www.kuwo.cn" target="_blank">
+                            酷我音乐
+                        </a>
+                        <a href="http://www.ladymax.cn" target="_blank">
+                            LADYMAX时尚网
+                        </a>
+                        <a href="http://www.kongjie.com" target="_blank">
+                            空姐网
+                        </a>
+                        <a href="http://www.china-ef.com/" target="_blank">
+                            中国品牌服装网
+                        </a>
+                        <a href="http://www.topit.me/" target="_blank">
+                            优美网
+                        </a>
+                        <a href="http://www.junzimen.com/" target="_blank">
+                            男士时尚
+                        </a>
+                        <a href="http://www.haxiu.com " target="_blank">
+                            哈秀时尚网
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.yue365.com/" target="_blank">
+                            365音乐网
+                        </a>
+                        <a href="http://www.wed114.cn" target="_blank">
+                            婚纱摄影
+                        </a>
+                        <a href="http://www.kela.cn/" target="_blank">
+                            珂兰钻石
+                        </a>
+                        <a href="http://info.china.alibaba.com/" target="_blank">
+                            商业资讯
+                        </a>
+                        <a href="http://baike.china.alibaba.com/" target="_blank">
+                            阿里巴巴生意经
+                        </a>
+                        <a href="http://www.jiaju.com/" target="_blank">
+                            家居就
+                        </a>
+                        <a href="http://www.meilele.com/" target="_blank">
+                            家具网
+                        </a>
+                        <a href="http://www.ebrun.com/" target="_blank">
+                            亿邦动力
+                        </a>
+                        <a href="http://www.aibang.com/" target="_blank">
+                            爱帮网
+                        </a>
+                        <a href="http://club.china.alibaba.com/" target="_blank">
+                            商人论坛
+                        </a>
+                        <a href="http://www.51hejia.com/" target="_blank">
+                            和家网
+                        </a>
+                        <a href="http://www.zhubajie.com/" target="_blank">
+                            猪八戒网
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.letao.com" target="_blank">
+                            乐淘网
+                        </a>
+                        <a href="http://quan.163.com" target="_blank">
+                            优惠券
+                        </a>
+                        <a href="http://www.appchina.com" target="_blank">
+                            应用汇
+                        </a>
+                        <a href="http://www.s.cn/" target="_blank">
+                            名鞋库
+                        </a>
+                        <a href="http://www.meilishuo.com/huodong/meizhuang" target="_blank">
+                            爱美赏
+                        </a>
+                        <a href="http://china.makepolo.com/" target="_blank">
+                            马可波罗
+                        </a>
+                        <a href="http://www.uzai.com" target="_blank">
+                            悠哉旅游网
+                        </a>
+                        <a href="http://lady.poco.cn/ " target="_blank">
+                            POCO女性
+                        </a>
+                        <a href="http://www.tianqi.com" target="_blank">
+                            天气预报
+                        </a>
+                        <a href="http://www.leho.com/" target="_blank">
+                            爱乐活
+                        </a>
+                        <a href="http://www.miyabaobei.com/" target="_blank">
+                            蜜芽宝贝
+                        </a>
+                    </li>
+                </ul>
+                <p class="link_more">
+                    <a href="/aboutus/links" target="_blank">
+                        更多&gt;&gt;
+                    </a>
+                </p>
+            </div>
+            <div class="record">
+                Copyright ©2014 Meilishuo.com &nbsp;
+                <a href="http://i.meilishuo.net/css/images/about/licenseIPC.jpg" target="_blank">
+                    电信与信息服务业务经营许可证100798号
+                </a>
+                &nbsp;
+                <a href="http://i.meilishuo.net/css/images/about/licenseGS.jpg" target="_blank">
+                    企业法人营业执照
+                </a>
+                &nbsp; 京ICP备11031139号&nbsp; 京公网安备110108006045&nbsp;
+                <br>
+                客服邮箱：kf@meilishuo.com&nbsp;&nbsp;客服电话：4000-800-577&nbsp; 文明办网文明上网举报电话：010-82615762
+                &nbsp;
+                <a href="http://net.china.com.cn/index.htm" target="_blank">
+                    违法不良信息举报中心
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!--  /.footer end -->
+
+<!--[if gte IE 9]><!-->
+<script src="http://static.chipotian.com/static/js/jquery-2.0.3.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="http://static.chipotian.com/static/js/jquery.lazyload.js"></script>
+<script type="text/javascript">
+
+//图片懒加载
+$(function() {
+     $("img.lazy").lazyload({
+     	placeholder : "http://www.zhangxinxu.com/study/image/loading.gif",
+     	effect : "fadeIn", 
+     	threshold : 100 //敏感度，还差100load
+     });
+});
+
+//滚动时导航条停留顶部
+$(function() {
+    var elm = $('#navbar');
+    var startPos = $(elm).offset().top;//200较之原来的$(elm).offset().top好，原来的代码一滚动就到顶固定
+    $.event.add(window, "scroll", function() {
+        var otop = $(window).scrollTop();
+        $(elm).css('position',((otop) > startPos) ? 'fixed' : 'static');
+    });
+});
+
+</script>
+
+</body>
+</html>

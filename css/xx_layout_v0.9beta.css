@@ -489,10 +489,11 @@ th {
 /*   overflow: hidden; */
 }
 @media all and (max-width: 769px) { /* set the break value. pad style*/
-  .area_block {width: 100%!important;}
+  .area_block {width: 100%!important;padding: 0!important;}
   .area_inline{width: auto;}
   .area_hidden{display: none!important;}
-  .area_wpct50{width: 48%!important;}
+  .area_wpct33{width: 32%!important;margin: 0!important;}
+  .area_wpct50{width: 48%!important;margin: 0!important;}
   .gap,
   .gap5,
   .gap10,
@@ -505,6 +506,7 @@ th {
 @media all and (max-width: 508px) { /* set the break value. phone all block*/
   .area_block, 
   .area_inline,  
+  .area_wpct33,
   .area_wpct50{width: 100%!important;}
 }
 /* ================ /.SmartArea ================ */

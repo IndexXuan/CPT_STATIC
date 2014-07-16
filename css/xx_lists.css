@@ -1,0 +1,147 @@
+    body {
+        background-color: #f2f0f0;
+    }
+    .breadcrumb {
+        padding:8px 15px;
+        margin-bottom:20px;
+        list-style:none;
+        background-color:#f5f5f5;
+        border-radius:4px;
+    }
+    .breadcrumb li {
+        display:inline-block;
+        *display: inline;
+        *border-right: 1px solid #aaa;
+        *margin-left:10px;
+        *padding-right: 4px;
+    }
+    .breadcrumb>li+li:before {
+        padding:0 5px;
+        color:#ccc;
+        content:"/\00a0";
+    }
+    .breadcrumb>.active {
+        color:#777;
+    }
+/* 左侧边分类导航 */
+.nav_list li {
+border-bottom: 1px dashed #e6e6e6;
+overflow: hidden;
+padding-top: 13px;
+padding-bottom: 13px;
+width: 100%;
+}
+.nav_list li span {
+color: #f69;
+float: left;
+font-size: 14px;
+line-height: 24px;
+width: 35px;
+}
+.nav_name_a {
+    font-size: 14px;
+    line-height: 1.414;
+    height: 20px;
+    color: #666;
+    text-align: left;
+}
+.nav_list li p {
+float: left;
+width: 162px;
+}
+.nav_list li p a {
+float: left;
+white-space: nowrap;
+line-height: 20px;
+margin-top: 2px;
+margin-bottom: 2px;
+padding-left: 6px;
+padding-right: 6px;
+color: #666;
+text-decoration: none;
+}
+/* /.左侧边分类导航 */
+
+/* 瀑布流列容器 */
+    .column {
+        display: inline-block;
+        vertical-align: top;
+        width: 231px;
+        background: white;
+    }
+    .pic_a { /* 瀑布块单个容器 */
+        display: block;
+        padding: 5px;
+        margin-bottom: 10px;
+        background: #fff;
+        border: 1px dashed #ddd;
+        text-decoration: none;
+        font-size: 12px;
+    }
+    .pic_a .img_cont { /* img和price的容器 */
+        position: relative;
+        *text-align: left;
+        display: block;
+        margin: 0 auto 5px;
+        border: 0;
+        vertical-align: bottom;
+    }
+    .pic_a .img_cont .price {
+        background: #fff;
+        height: 18px;
+        line-height: 18px;
+        padding: 0 5px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        *right: 5px;
+        opacity: .8;
+        filter: alpha(opacity=80);
+    }
+    .like_nums { /* 喜欢的人数 */
+        position: relative;
+        top: 3px;
+        left: 5px;
+    }
+    .sold_num { /* 销售数目 */
+        position: relative;
+        top: 3px;
+        left: 25px;
+    }
+    .pic_a .u_img { /* 用户头像 */
+        width: 32px;
+        height: 32px;
+        float: left;
+    }
+    .pic_a h3 { /* infos */
+        text-align: left;
+        font-size:12px;
+    }
+    .line { /* 分割线 */
+        margin: 5px auto;
+        border-bottom: 1px dashed #eee;
+    }
+    .pic_a h4 { /* username */
+        position: relative;
+        left: -50px;
+        top: -3px;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .intro { /* 推荐介绍文字 */
+        margin: 0;
+        padding: 0;
+        width: 160px;
+        margin-left: 42px;
+        line-height: 20px;
+        padding-top: 4px;
+        text-align: left;
+        color: #999;
+    }
+    #no_more_pics { /* 瀑布流结束 */
+        font-size: 12px;
+        display: none;
+        width:300px;
+        margin: 20px auto;
+        text-align: center;
+    }
