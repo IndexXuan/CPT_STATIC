@@ -1,0 +1,88 @@
+charset "UTF-8";
+em{font-style:normal;}
+*html .clearfix{height:1%;}
+.clearfix{display:block;}
+*+html .clearfix{min-height:1%;}
+.demo{width:1194px;margin:0 auto;}
+
+/* item_list */
+.item_list{position:relative;padding:0 0 50px;}
+.item{
+	width:280px;background:#fff;overflow:hidden;margin:15px 0 0 0;border: 1px solid #ddd;
+}
+.item:hover {
+	border: 1px solid #eee!important;
+}
+.item_t{padding:0px 0px 0;}
+.item_t .img{background-color:#FFFFFF;margin:0 auto;position:relative;width:280px;min-height:280px;}
+.item_t .img a{display:block;}
+.item_t .price{
+	position:absolute;bottom:10px;right:5px;background-color:rgba(0, 0, 0, 0.2);color:#FFF;padding: 3px 10px;
+	filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#33000000, endcolorstr=#33000000);
+}
+.item .btns{display:none;}
+.img_album_btn{top:2px;right:5px;position:absolute;background:#ff6fa6;color:#ffffff;height:20px;line-height:20px;border-radius:5px;padding: 2px 10px 22px 10px;*padding: 2px 10px 2px 10px;}
+.img_album_btn:hover{color:#fff;}
+.item_t .title{padding:15px 10px;line-height:18px;}
+.item_b{padding:10px 8px;}
+.item_b .items_likes .like_btn{background:url("../img/like.png") no-repeat;display:block;float:left;height:23px;width:59px;margin-right:5px;text-align: center;color:#fff;line-height: 23px;}
+.item_b .items_likes em{line-height:23px;display:block;float:left;padding:0px 6px;color:#FF6699;font-weight:800;border:1px solid #ff6fa6;border-radius:3px;}
+
+/* more */
+#more{display:block;margin:10px auto 20px;}
+
+/* infscr-loading */
+#infscr-loading{bottom:-10px;left:45%;position:absolute;text-align:center;height:20px;line-height:20px;z-index:100;width:120px;}
+
+/* page */
+.page{display:none;font-size:18px;height:60px;text-align:center;margin:20px 0 0 0;}
+.page_num a,.page_num span{margin:0 2px;background:url("../img/page.png") no-repeat;display:inline-block;width:30px;height:28px;line-height:26px;overflow:hidden;}
+.page_num a{background-position:-65px 0;color:#FF3333;overflow:hidden;}
+.page_num .prev{background-position:1px -33px;}
+.page_num .unprev{background-position:1px 0;cursor:default;}
+.page_num .next{background-position:-32px 0;}
+.page_num .unnext{background-position:-32px -33px;cursor:default;}
+.page_num .current{background-position:-99px 0;color:#FFFFFF;}
+.page_num .etc{background-position:-172px 8px;}
+
+/* to_top */
+.to_top a,.to_top a:hover{background:url("../img/gotop.png") no-repeat}
+.to_top a{
+	background-position:0 0;float:left;height:50px;overflow:hidden;width:50px;position:fixed;bottom:35px;cursor:pointer;right:20px;
+	_position:absolute;
+	_right:auto;
+	_left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth)-(parseInt(this.currentStyle.marginLeft, 10)||0)-(parseInt(this.currentStyle.marginRight, 10)||20));
+	_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop, 10)||20)-(parseInt(this.currentStyle.marginBottom, 10)||20)));
+}
+.to_top a:hover{background-position:-51px 0px;}
+.rec_nav{margin-top:14px;background:#fff;border:1px solid #ddd;width:200px;padding:0 13px 13px}.rec_nav .last{border:0}.rec_nav .cate_ser{height:22px;padding-top:10px}.rec_nav .cate_ser .text{float:left;height:22px;overflow:hidden;width:140px}.rec_nav .cate_ser .text input{border:1px solid #ddd;float:left;height:18px;line-height:18px;color:#999;width:136px}.rec_nav .cate_ser .btn{float:left;margin-left:6px;height:22px;width:52px}.rec_nav .cate_ser .btn input{background:0;border:0;color:#fff;cursor:pointer;height:22px}.rec_nav .cate_ser .btn input:hover{color:#fff}.rec_nav h2{font-size:14px;line-height:20px;padding-left:42px;padding-top:8px;zoom:1;position:relative;margin:0 2px;border-bottom:1px solid #fafafa}.rec_nav h2 span{background:url("http://i.meilishuo.net/css/../img/catalog/catalogicon1115.jpg") no-repeat;position:absolute;width:38px;height:32px;left:0;top:-2px}.rec_nav .category{padding-top:6px;white-space:nowrap;width:100%}.rec_nav .category a{-webkit-border-radius:2px;border-radius:2px;float:left;white-space:nowrap;height:18px;line-height:18px;margin-right:6px;margin-bottom:6px;_line-height:19px;padding:0 6px;color:#666;background:#fbfbfb;border:1px solid #eaeaea}.rec_nav .category a:hover{border:1px solid #acacac}.rec_nav .category .ishot{color:#f69;background:#fff4f8;border-color:#fee2ed}.rec_nav .category .ishot:hover{border-color:#ffa2c0}.rec_nav .category a.active{color:#fff;background:#ff8cb5;border-color:#ff81ad}.rec_nav .category a.active:hover{color:#fff}.rec_nav .catacon{width:200px;overflow:hidden;padding-top:6px}.rec_nav .category{border-top:1px solid #f4f4f4}.rec_nav .nav_list li{border-bottom:1px dashed #e6e6e6;overflow:hidden;padding-top:13px;padding-bottom:13px;width:100%}.rec_nav .nav_list li span{color:#f69;float:left;font-size:14px;line-height:24px;width:35px}.rec_nav .nav_list li p{float:left;width:162px}.rec_nav .nav_list li p a{float:left;white-space:nowrap;line-height:20px;margin-top:2px;margin-bottom:2px;padding-left:6px;padding-right:6px}.rec_nav .nav_list li p .active{color:#fff;background:#f69}.rec_nav .nav_list li p .active:hover{color:#fff}
+.item_content{width:100%;*width: 97%;border-top: 1px dashed #CCC;padding: 10px;line-height: 1.7;}
+
+/*右侧悬浮导航*/
+.float{float:left;width:111px;height:504px;position:fixed;display:none;overflow:hidden;z-index:999999}
+*html .float{position:absolute;}
+.float a{display:block;text-indent:-9999px;overflow:hidden;height:42px;background:url(http://www.17sucai.com/preview/27774/2014-01-14/超过一定高度出现左右浮动导航及底部固定导航代码/images/right_nav.png) no-repeat;-webkit-transition:background 0.2s ease}
+.float .an_1:hover{background-position:-111px 0}
+.float .an_2{background-position:-222px 0}
+.float .an_2:hover{background-position:-333px 0}
+.float .an_3{background-position:-444px 0}
+.float .an_3:hover{background-position:-555px 0}
+.float .an_4{background-position:-666px 0}
+.float .an_4:hover{background-position:-777px 0}
+.float .an_5{background-position:-888px 0}
+.float .an_5:hover{background-position:-999px 0}
+.float .an_6{background-position:-1110px 0}
+.float .an_6:hover{background-position:-1221px 0}
+.float .an_7{background-position:-1332px 0}
+.float .an_7:hover{background-position:-1443px 0}
+.float .an_8{background-position:-1554px 0}
+.float .an_8:hover{background-position:-1665px 0}
+.float .an_9{background-position:-1776px 0}
+.float .an_9:hover{background-position:-1887px 0}
+.float .an_10{background-position:-1998px 0}
+.float .an_10:hover{background-position:-2109px 0}
+.float .an_11{background-position:-2442px 0}
+.float .an_11:hover{background-position:-2553px 0}
+.float .an_12{background-position:-2220px 0}
+.float .an_12:hover{background-position:-2331px 0}
+/*右侧悬浮*/

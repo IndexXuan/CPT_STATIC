@@ -1,0 +1,70 @@
+.main-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    margin-top: 20px;
+}
+.recom_wraper {
+    width: 706px;
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 48px;
+    margin-left: 10px;
+    padding-bottom: 20px;
+    float: left;
+    position: relative;
+}
+.recom_title_bg { /* 框 */
+    background: #fff;
+    border: 1px solid #ddd;
+    width: 105px;
+    height: 33px;
+    position: absolute;
+    top: -32px;
+    *top: -35px;
+    left: -1px;
+}
+.recom_title { /* 字 */
+    padding-left: 30px;
+    width: 100px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: -32px;
+    *top: -35px;
+    left: -5px;
+    color: #f40;
+    z-index: 10;
+}
+.main-content .corner-notic {
+    width: 228px;
+    float: left;
+    margin-left: 12px;
+}
+.userinfo {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-top: 14px;
+    padding: 13px;
+}
+.userinfo .avatar { /* 头像大小 */
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.userinfo .nickname {
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    width: 100%;
+    margin: 5px 0;
+}
+.userinfo .nickname a {
+    font-size: 14px;
+    font-weight: bold;
+}

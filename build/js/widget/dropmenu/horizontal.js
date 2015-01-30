@@ -1,0 +1,1 @@
+!function(gmu){gmu.Dropmenu.options.horizontal=!0,gmu.Dropmenu.option("horizontal",!0,function(){var me=this;me.on("done.dom",function(e,$root){$root.addClass("ui-horizontal")})})}(gmu,gmu.$);

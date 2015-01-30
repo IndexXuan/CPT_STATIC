@@ -1,0 +1,206 @@
+.mainNav {
+    width: 100%;
+    height: 40px;
+    background: #ee4e22;
+}
+.mainNav {
+    width: 100%;
+    height: 40px;
+    background: #ee4e22;
+}
+.mainNav .nav {
+    width: 980px;
+    height: 40px;
+    margin: 0 auto;
+}
+.mainNav .nav .navigation li.current {
+    background: #c63f1a;
+}
+.mainNav .nav .navigation li {
+    float: left;
+    display: inline;
+    height: 40px;
+    background: url(http://s.imchuke.com/static/img/nav-line.png) no-repeat right center;
+}
+.mainNav .nav .navigation li a {
+    float: left;
+    padding: 0 20px;
+    padding: 10px 20px 0;
+    height: 40px;
+    color: #fff;
+    font-size: 14px;
+}
+.mainNav .nav .navigation li a:hover {
+    text-decoration: none;
+    background: #c63f1a;
+}
+.state-show {
+    line-height: 40px;
+    position: relative;
+    z-index: 100;
+}
+.state-show .normal-a:hover {
+    background: #c63f1a;
+    text-decoration: none;
+}
+.state-show .normal-a {
+    font-size: 14px;
+    color: #fff;
+    padding: 0 15px;
+    display: inline;
+    float: left;
+    height: 40px;
+}
+.state-show .normal-side-box {
+    top: 39px;
+    right: 0;
+}
+.icon-normal {
+    background: url(http://s.imchuke.com/static/img/icon-total.gif) no-repeat 0 0;
+    display: inline-block;
+    margin-right: 3px;
+}
+.icon-sign {
+    background-position: 0 0;
+    width: 16px;
+    height: 0;
+    padding-top: 16px;
+    overflow: hidden;
+    float: left;
+    margin: 13px 3px 0 0;
+    _margin: 12px 3px 0 0;
+}
+.icon-advance {
+    background-position: right top;
+    width: 15px;
+    height: 16px;
+    float: left;
+    margin-top: 3px;
+    _margin-top: 2px;
+}
+em {
+    font-style: normal;
+}
+.normal-side-box {
+    position: absolute;
+    top: -65px;
+    right: 48px;
+    width: 180px;
+    background: #fff;
+    border: #ff6600 solid 1px;
+    text-align: center;
+    color: #666;
+    display: none;
+}
+.normal-side-box {
+    text-align: center;
+    color: #666;
+}
+.normal-side-box p {
+    margin: 10px;
+    line-height: 24px;
+}
+.normal-side-box p.other {
+    background: #f9f9f9;
+    margin: 0;
+    padding: 10px 0;
+}
+.normal-side-box p b {
+    color: #ff3838;
+}
+.normal-side-box p a {
+    color: #0289cd;
+}
+#xxlb-container{ width:100%; height:160px; overflow:hidden; margin:0 auto; position:relative;}
+#xxlb-container ol{ position:absolute; right:5px; bottom:5px; height:25px; z-index:999;}
+#xxlb-container ol li{ float:left; width:10px; height:10px; text-align:center; border:1px solid #f47400; border-radius: 50%;cursor:pointer; color:#f47400; background:gray; opacity: .2;margin: 5px;}
+#xxlb-container ol li.xxlb-active{ opacity: .9;}
+#xxlb-container ul{ position:absolute;left:0;top:0;max-width:6000px;opacity:1;}
+#xxlb-container ul li{max-width:1200px;width:100%;*width: 1200px;height:160px;float:left;opacity: 1;}
+#xxlb-container ul li img{width:1920px;height:150px; float:left;}
+
+
+.container960 .attr_box .pic_box {
+    overflow: visible;
+    width: 101%;
+    position: relative;
+    left: -0.5%;
+    text-align: center;
+    top: -20px;
+    margin-top: 10px;
+}
+.container960 .attr_box .pic_box li {
+    width: 312px;
+    height: 420px;
+    border: 1px solid #E5E5E5;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 4px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 0;
+}
+.pic_box img {
+    width: 310px;
+    height: 310px;
+    border: none;
+}
+.pic_box .goods-tit {
+    width: 294px;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    margin: 8px 0 8px 6px;
+    position: relative;
+    font-weight: normal;
+    color: #333;
+    padding: 0;
+    min-height: 1px;
+}
+.pic_box .goods-tit {
+    width: 294px;
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    overflow: hidden;
+    margin: 8px 0 8px 6px;
+    position: relative;
+    font-weight: normal;
+    color: #333;
+}
+.des-other {
+    margin: 2px 0 0 5px;
+    height: 40px;
+    line-height: 18px;
+    display: block;
+    float: left;
+}
+.des-other strong {
+    width: 49px;
+    height: 16px;
+    display: block;
+}
+.des-other .icon-gai {
+    background: url(http://s.imchuke.com/static/img/list-total.gif) no-repeat -151px 0;
+    display: block;
+    width: 49px;
+    height: 0;
+    padding-top: 16px;
+    overflow: hidden;
+}
+.des-other .price-old {
+    color: #999;
+    text-decoration: line-through;
+    font-size: 14px;
+    font-family: "微软雅黑","verdana";
+}
+em, var, i {
+    font-style: normal;
+}
+.des-other .discount {
+    font-size: 12px;
+    color: #666;
+    vertical-align: top;
+}

@@ -1,0 +1,394 @@
+@charset "UTF-8";
+body {
+    background: #f7f7f7;
+    color: #5E5E5E;
+    height: 100%;
+    min-width: 1030px;
+    font: 12px/1.5 Tahoma,Helvetica,Arial,'宋体',sans-serif,\5b8b\4f53;
+}
+em {
+    font-style: normal;
+}
+.header_user {
+    height: 109px;
+    border-bottom: 5px solid #f40;
+    background: #fff;
+}
+.header .logo {
+    width: 29%;
+}
+.header .logo a {
+    height:100%;
+    position: relative;
+    top: 30px;
+}
+.header_user .user_nav {
+    position: relative;
+    top: 62px;
+    *top: 67px;
+    width: 70%;
+}
+.header_user .user_nav ul {
+    height: 42px;
+    line-height: 42px;
+}
+.header_user .user_nav li a.active {
+    background: #f40;
+    color: #fff;
+    line-height: 43px;
+}
+.header_user .user_nav li a {
+    padding: 0 32px;
+    border-radius: 2px 2px 0 0;
+    background: #f1f1f1;
+    display: block;
+    font-size: 14px;
+    color: #f40;
+    font-weight: 700;
+}
+.jf_info {       /* panel */
+    margin-right: 1px;
+    width: 65.1%;
+    *height: 188px;
+    min-height: 175px;
+    position: relative;
+    padding-bottom: 30px;
+    *padding-bottom: 10px;
+    background: #fff;
+}
+.jf_info h3 {
+    padding: 0 0 0 30px;
+    *padding: 20px 0 6px 30px;
+    font-size: 14px;
+    color: #303030;
+    float: left;
+}
+.more-fz {
+    margin-top: 20px;
+}
+.more {         /* more */
+    font-family: "宋体";
+    font-size: 12px;
+    font-weight: normal;
+    float: right;
+    display: inline;
+    margin-right: 10px;
+    padding: 0 6px;
+    display: block;
+    height: 20px;
+    color: #08c;
+    line-height: 23px;
+    float: right;
+    position: relative;
+    top: 14px;
+    right: -18px;
+}
+.jf_info ul li {
+    float: left;
+    padding-left: 22px;
+    line-height: 0.5;
+    *line-height: 1.5;
+    letter-spacing: 1px;
+}
+.jf_info ul li .pic {
+    width: 56px;
+    height: 56px;
+    margin-right: 10px;
+}
+.jf_info ul li .introduce-mode {
+    color: #919191;
+    line-height: 20px;
+    *line-height: 1.4;
+}
+.jf_info ul li .introduce-mode .title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+}
+.jd-num01 {
+    color: #ff6600;
+}
+.jf_info ul li a {
+    color: #0289cd;
+    font-size: 12px;
+}
+.jf_login {
+    width: 34.2%;
+    *width: 32%;
+    min-height: 175px;
+    *height: 178px;
+    padding: 6px 0 18px 0;
+    *padding: 6px 0 9px 0;
+    background: #fff;
+}
+.jf_login .title {
+    color: #333;
+    padding-bottom: 20px;
+    height: 23px;
+}
+.jf_login p {
+    font-size: 14px;
+    text-align: center;
+    color: #919191;
+}
+.jf_login .userlogin-btn {
+    width: 178px;
+    height: 38px;
+    background: #ff6600;
+    display: block;
+    margin: 0 auto 20px;
+    line-height: 40px;
+    color: #fff;
+    border: 1px solid #e25f07;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+.jf_login .register {
+    color: #0289cd;
+    font-size: 14px;
+    padding-left: 18px;
+    line-height: 0;
+}
+
+/* 大块栏目 */
+.tab_tit { /* 标题类 */
+    margin-right: 10px;
+    padding: 5px 18px;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+    *top: 18px;
+}
+.main_tit {
+    background-color: #f40;
+}
+.main_tit a {
+    color: #fff;
+}
+.container960 .wel_tle .more {
+    float: right;
+    color: #999;
+    position: relative;
+    top: 8px;
+    *top: 20px;
+}
+.line {
+    border-bottom: 2px solid #f40;
+}
+.container960 .attr_box .pic_box { /* ul */
+    overflow: visible;
+    width: 103.13%;
+    position: relative;
+    left: -1.56%; /* 调整ul相对位置，ul自身变长居中 */
+    text-align: center;
+    *margin-top: 45px;
+    top: -20px;
+}
+.container960 .attr_box .pic_box li {
+    width: 300px;
+    *width: 275px;
+    height: 465px;
+    *height: 442px;
+    border: 1px solid #E5E5E5;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 10px;
+}
+.pic_box li:hover { /* goods hover */
+    box-shadow: 0px 0px 1px #aaa;
+}
+.pic_box img {
+    width: 280px;
+    height: 280px;
+    border: none;
+}
+.pic_box h6 { /* 商品标题 */
+    font-size: 12px;
+    color: #000;
+    margin: 12px 0 9px 0;
+    text-align: left;
+    min-height: 40px;
+    *height: 40px;
+}
+.pic_box .title-tips {
+    margin: 0 auto 10px;
+    color: #919191;
+    width: 98%;
+    overflow: hidden;
+}
+.pic_box .title-tips .old-price {
+    text-decoration: line-through;
+}
+.pic_box .good-price {
+    margin: 10px auto 0;
+    width: 96%;
+    height: 36px;
+    line-height: 36px;
+    position: relative;
+}
+good.start .price-current {
+    color: #50830B;
+}
+.pic_box .good-price .price-current {
+    display: block;
+    float: left;
+    font-size: 32px;
+    color: #50830b;
+    font-family: Arial;
+}
+.pic_box .good-price .price-current .unit {
+    font-family: "宋体", "verdana";
+    font-size: 14px;
+}
+.pic_box .btn {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.pic_box .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    background: #f40; /* 按钮颜色 */
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.pic_box .btn-disabled {
+    background: gray!important; /* 不可用按钮颜色 */
+    cursor: not-allowed;
+}
+pic_box .btn a span {
+    display: inline-block;
+}
+.pic_box .pic-des {
+    background: #f5ffe4;
+    display: none;
+}
+.pic_box .pic-des {
+    line-height: 28px;
+    font-size: 12px;
+    color: #acc87c;
+}
+.des-state span {
+    width: 95%;
+}
+/* /.大块栏目 */
+/* nav-userinfo start by ake*/
+.nav-userinfo {
+    padding: 20px 0 36px 18px;
+    *padding: 20px 0 0 18px;
+    background:#fff;
+}
+.nav-userinfo .user-img {
+    width: 90px;
+    display: inline;
+    position: relative;
+    float: left;
+    padding-right: 13px;
+    margin-right: 30px;
+}
+.nav-userinfo .user-img .userinfo-img {
+    background-clip: padding-box;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border: 2px solid #e2e2e2;
+    display: block;
+}
+.nav-userinfo .user-personal {
+    float: left;
+    display: inline;
+    line-height: 26px;
+}
+.nav-userinfo .user-personal .name {
+    color: #457306;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-userinfo .user-personal .name:hover {
+    text-decoration: underline;
+}
+.nav-userinfo .user-personal .juandou {
+    padding-right: 33px;
+    color: #223902;
+}
+.nav-userinfo .user-personal .juandou .num {
+    color: #6db110;
+    font-weight: bold;
+}
+.nav-userinfo .user-personal .juandou .num:hover {
+    text-decoration: underline;
+}
+.nav-userinfo .user-personal .wenzi {
+    position: relative;
+}
+.nav-userinfo .user-personal .wenzi:hover{ text-decoration: none;}
+.nav-userinfo .user-personal .phone{
+    width: 10px;
+    height: 14px;
+    background: url(../img/jd-store/stroe-total.gif?201402171) no-repeat -196px -97px;
+    display: inline-block;
+    vertical-align: -2px;
+    margin-left: 10px;
+}
+.nav-userinfo .user-personal .phone:hover
+{
+    background: url(../img/jd-store/stroe-total.gif?201402171) no-repeat -185px -97px;
+}
+.user-manage { /*       管理收货地址   */
+    padding-top: 18px;
+    *position: relative;
+    *left: 0px;
+    *top: 0px;
+    *width: 140px;
+}
+.user-manage a {
+    padding: 0 18px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    display: block;
+    float: left;
+    border-radius: 2px;
+    background: #f9f9f9;
+    color: #666666;
+    display: inline;
+}
+.user-manage .active {
+    color: #568c0c;
+    font-weight: bold;
+}
+.user-manage .my-jd {
+    margin-top: 12px;
+    *margin-top: 5px;
+}
+.user-manage .address {
+    position: relative;
+    left: 120px;
+    top: 15px;
+    *left: 133px;
+    *top: 0px;
+    padding: 0 20px;
+}
+

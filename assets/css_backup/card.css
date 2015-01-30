@@ -1,0 +1,210 @@
+@charset "UTF-8";
+.clearfix {
+  *zoom: 1;
+}
+.clearfix: before,
+.clearfix: after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.clearfix: after {
+  clear: both;
+}
+.ui_card_wrap {
+position: absolute;
+background-color: #fff;
+padding: 2px;
+background-color: #fff;
+background: url(http://s.imchuke.com/static/img/grey_border_97762d7.png) repeat;
+}
+.ui_card_content {
+	position: relative;
+background-color: #fff;
+overflow: hidden;
+font-size: 12px;
+border: 1px solid #bfbfbf;
+}
+.card_headinfo_wrap {
+width: 368px;
+height: 100px;
+position: relative;
+top: 0;
+left: 0;
+}
+
+.card_headinfo_wrap img {
+width: 370px;
+height: 100px;
+position: absolute;
+left: -1px;
+}
+
+.card_userinfo_title .userinfo_username, .card_userinfo_title .userinfo_username:hover {
+max-width: 112px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+text-decoration: none;
+}
+.card_userinfo_title {
+font-family: 'Î¢ÈíÑÅºÚ';
+font-size: 16px;
+margin-top: 8px;
+color: #5F6062;
+line-height: 20px;
+}
+.interaction_wrap_theme2 {
+bottom: 5px;
+position: absolute;
+right: 8px;
+}
+.interaction_wrap_theme2 .btn_concern {
+	background: url(http://s.imchuke.com/static/img/btn_interaction_120f7d1.png) no-repeat;
+background-position: 0 -52px;
+color: #FFF;
+float: left;
+height: 22px;
+line-height: 22px;
+width: 62px;
+text-decoration: none;
+}
+.interaction_wrap_theme2 .btn_concernd:hover {
+
+}
+.interaction_wrap_theme2 .btn_sendmsg {
+	background: url(http://s.imchuke.com/static/img/btn_interaction_120f7d1.png) no-repeat;
+background-position: 0 -74px;
+margin-left: 8px;
+width: 70px;
+color: #FFF;
+float: left;
+height: 22px;
+line-height: 22px;
+text-decoration: none;
+}
+.interaction_wrap_theme2 .btn_sendmsg:hover {
+
+}
+.card_userinfo_wrap {
+padding-bottom: 6px;
+width: 368px;
+background: #F5F7FA;
+}
+.card_userinfo_left {
+position: relative;
+width: 135px;
+height: 96px;
+float: left;
+}
+.card_userinfo_left .userinfo_head_wrap {
+height: 117px;
+width: 117px;
+left: 15px;
+position: absolute;
+top: -30px;
+}
+.card_userinfo_left .userinfo_head {
+height: 105px;
+width: 105px;
+left: 0;
+padding: 4px;
+background: url(http://s.imchuke.com/static/img/card_userinfo_head_bg_256b2d8.png) no-repeat;
+position: absolute;
+top: 0;
+}
+.j_avatar {
+display: block;
+width: 105px;
+height: 105px;
+position: absolute;
+left: 0;
+top: 0;
+padding: 4px;
+}
+.card_userinfo_middle {
+float: left;
+}
+.card_userinfo_title {
+font-family: '宋体';
+font-size: 16px;
+margin-top: 8px;
+color: #5F6062;
+line-height: 20px;
+height: 20px;
+}
+.card_userinfo_num {
+margin-top: 6px;
+color: #797C80;
+}
+.card_userinfo_honor {
+_margin-left: -20px;
+width: 224px;
+}
+.card_userinfo_title .userinfo_username, .card_userinfo_title .userinfo_username:hover {
+max-width: 112px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+text-decoration: none;
+}
+.userinfo_username {
+float: left;
+}
+.icon_wrap_theme1 {
+float: left;
+margin: 3px 0 0 5px;
+}
+.card_userinfo_middle .userinfo_sex {
+    background: url(http://s.imchuke.com/static/img/icon_groups_26e15a2.png);
+    height: 14px;
+    margin: 2px 4px 0 0;
+    vertical-align: middle;
+    width: 14px;
+}
+.card_userinfo_middle .userinfo_sex_male {
+background-position: 0 -32px;
+}
+.card_userinfo_middle .userinfo_sex_female {
+    background-position: 0 -64px;
+}
+.card_userinfo_middle span {
+font-family: 'ËÎÌå';
+display: inline;
+float: left;
+}
+.card_userinfo_middle span {
+font-family: 'ËÎÌå';
+display: inline;
+float: left;
+}
+.card_userinfo_middle .userinfo_split {
+border-color: #CCC;
+border-style: solid;
+border-width: 0 0 0 1px;
+height: 10px;
+margin: 4px 10px 0 9px;
+}
+.card_userinfo_middle span {
+	line-height: 20px;
+font-family: 'ËÎÌå';
+display: inline;
+float: left;
+}
+.userinfo_split {
+border-color: #CCC;
+border-style: solid;
+border-width: 0 0 0 1px;
+display: inline-block;
+height: 10px;
+line-height: 10px;
+margin: 0 10px 2px 9px;
+vertical-align: middle;
+}
+
+.ui_card_wrap .ui_white_up {
+top: -8px;
+width: 21px;
+height: 11px;
+background: url(http://tb1.bdstatic.com/tb/static-common/img/grey_arrow_up.gif?t=1408529176908) no-repeat 0 0;
+}

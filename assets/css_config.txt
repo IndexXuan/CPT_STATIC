@@ -1,0 +1,13 @@
+//custom module
+@import "header.css"
+@import "headTag.css"
+@import "nav-ul.css"
+@import "goods-list.css"(for 9k9)
+@import "goods-item.css"(for zhideguang)
+@import "brand.css"
+@import "footer.css"
+
+//=== gmu module ===//
+@import "slider.css"
+@import "navigator.css"
+@import "gotop.css"

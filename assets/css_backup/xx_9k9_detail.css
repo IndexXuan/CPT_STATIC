@@ -1,0 +1,288 @@
+.jf_goods_cont {
+    overflow: hidden;
+    margin: 10px auto;
+    background-color: white;
+    padding: 10px;
+}
+.show_body {
+    _width: 900px;
+    position: relative;
+    clear: both;
+    height: auto;
+    overflow: hidden;
+    padding: 40px 40px;
+}
+.img_show {
+    position: relative;
+    width: 310px;
+    overflow: visible;
+}
+.img_show .show_big_wrap {
+    width: 310px;
+    overflow: hidden;
+    position: relative;
+}
+.img_show .show_big_wrap .show_bgimg {
+    background: url(http://s.imchuke.com/static/img/shareinfo_show_big_wrap_bg.jpg) repeat;
+    width: 310px;
+    min-height: 310px;
+}
+.img_show .show_big_wrap a {
+    outline: 0 none;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 310px;
+    height: 310px;
+}
+.img_show .other-show {
+    width: 310px;
+    background: #f9f9f9;
+    height: 38px;
+    border: #e2e2e2 solid 1px;
+    color: #999;
+}
+.other-show .share-box {
+    margin: 0 0 0 20px;
+    height: 38px;
+    width: 124px;
+    line-height: 36px;
+    _line-height: 36px;
+}
+.other-show .share-box span,
+.other-show .share-box .box {
+    float: left;
+}
+.other-show .share-box .box {
+    margin: 6px 0 0 3px;
+}
+#bdshare {
+    _overflow-x: hidden;
+    z-index: 999999;
+    padding-bottom: 2px;
+    font-size: 12px;
+    float: left;
+    text-align: left!important;
+    zoom: 1;
+}
+span.bds_more, .bds_tools a {
+    display: block;
+    font-family: '宋体',Arial;
+    height: 21px;
+    float: left;
+    cursor: pointer;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    padding-left: 22px;
+}
+.price-info {
+    color: #919191;
+    margin-left: 40px;
+    position: relative;
+    width: 510px;
+}
+.price-info h3 {
+    margin: 0;
+    font-size: 18px;
+    font-family: "微软雅黑";
+    color: #333;
+    font-weight: normal;
+    width: 350px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.price-info .share {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+.price-info p.tips {
+    margin-top: 25px;
+}
+.price-info p.price {
+    margin-top: 20px;
+}
+.price-info p.price {
+    margin-top: 20px;
+}
+.price-info .item-btn {
+    margin-top: 20px;
+}
+.price-info p.user-like {
+    margin-top: 30px;
+    border: 1px dashed #c6c6c6;
+    line-height: 18px;
+    height: 35px;
+    padding: 6px;
+}
+.price-info .share a {
+    color: #919191;
+}
+.price-info .item-pr {
+    padding-right: 20px;
+}
+.price-info .item-pr .old-price {
+    text-decoration: line-through;
+}
+.jd-num01 {
+    color: #ff6600;
+}
+.title-tips01 {
+    padding: 0 10px;
+    height: 24px;
+    background: #a1d88d;
+    float: left;
+    margin-top: 22px;
+    text-align: center;
+    line-height: 22px;
+    color: #fff;
+    position: relative;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.org {
+    color: #FF5500;
+}
+.price-info .price .jd-current {
+    font-size: 42px;
+    color: #ee4e22;
+    font-family: Arial;
+    vertical-align: -2px;
+}
+.price-info .bady-time .time {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #666666;
+    line-height: 20px;
+}
+.price-info .item-btn .btn { /* 必须放在icon上面，否则background-position属性覆盖失效 */
+    width: 145px;
+    height: 50px;
+    line-height: 38px;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    background: url(http://s.imchuke.com/static/img/new-alert-total.gif) no-repeat;
+    font-weight: bold;
+}
+.price-info .item-btn .buy { /* 去购买 */
+    background-position: 0 -132px;
+}
+.price-info .item-btn .gone { /* 抢光了 */
+    background-position: 0 -344px;
+    cursor: not-allowed;
+}
+.price-info .item-btn .collect-box .fly {
+    background: url(http://s.imchuke.com/static//img/fly.gif) no-repeat;
+    height: 70px;
+    width: 300px;
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    display: none;
+    z-index: 10;
+}
+.price-info .item-btn .item-like-btn {
+    width: 106px;
+    height: 50px;
+    background: url(http://s.imchuke.com/static/img/like-btn.gif) no-repeat 0 0;
+    display: inline;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+.price-info .user-like a {
+    margin-left: 6px;
+    opacity: 0.35;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=35);
+    display: inline-block;
+    height: 35px;
+}
+.price-info .item-btn .collect-box {
+    background: url(http://s.imchuke.com/static/img/item-like-bj.gif) no-repeat;
+    margin-left: 20px;
+    width: auto;
+    height: 50px;
+    position: relative;
+}
+.price-info .item-btn .collect-box .fly {
+    background: url(http://s.imchuke.com/static/img/fly.gif) no-repeat;
+    height: 70px;
+    width: 300px;
+    position: absolute;
+    top: -25px;
+    left: 5px;
+    display: none;
+    z-index: 10;
+}
+.price-info .item-btn .item-like-btn {
+    width: 106px;
+    height: 50px;
+    background: url(http://s.imchuke.com/static/img/like-btn.gif) no-repeat 0 0;
+}
+.price-info .item-like .heart {
+    background: url(http://s.imchuke.com/static/img/my-like.png) no-repeat -23px -37px;
+    width: 21px;
+    height: 17px;
+    position: absolute;
+    top: 17px;
+    left: 15px;
+}
+.price-info .item-btn .item-like:hover .heart {
+    background-position: -23px -77px;
+}
+.price-info .item-btn .collect-box .like-l {
+    padding-left: 25px;
+    margin: 0;
+}
+.price-info .item-btn .item-like {
+    cursor: pointer;
+}
+.price-info .item-btn .collect-box p {
+    line-height: 50px;
+    font-size: 14px;
+    color: #666;
+    font-weight: 700;
+    text-align: center;
+}
+.price-info .item-btn .item-like:hover p {
+    color: #444;
+}
+
+.price-info .report .report-icon {
+    height: 15px;
+    width: 14px;
+    display: inline-block;
+    margin-right: 6px;
+    background: url(http://s.imchuke.com/static/img/new-alert-total.gif) no-repeat -125px -22px;
+    vertical-align: middle;
+}
+
+/* 功能区包含 详情、评论 */
+.fn-area-ul {
+    width: 100%;
+    float: left;
+    background-color: #f9f9f9;
+    z-index: 999;
+}
+.fn-area-ul li {
+    width: 30%;
+    float: left;
+}
+.fn-area-ul li.active {
+    background-color: #6db110;
+}
+.fn-area-ul li.active a {
+    background-color: #6db110;
+    color: white;
+    font-weight: bold;
+}
+.fn-area-ul a {
+    display: block;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+}
