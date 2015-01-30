@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link href="同步于cpt首页main.css" rel="stylesheet">
+<!-- 专题页面统一使用页面内嵌style -->
+<!-- 原因:1.效率最高。2。页面一般较为简单。3。便于维护快速上线。4.防止样式被全局覆盖 -->
+<style>
+/* 常用工具类 */
+.block-center { /* 用在block元素上，进行块状元素的水平居中 */
+  margin-left: auto;
+  margin-right: auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* /.常用工具类 */
+
+.top { /* if exists */
+  width: 100%;
+  height: ;
+  background: url(path/to/top-img) no-repeat center;
+}
+.banner {
+  width: 100%;
+  height: ;
+  background: url(path/to/banner-img) no-repeat center;
+}
+.big-bg1 { /* 设计人员给的大背景素材，一个页面通常放几行，size: 1920*height */
+  width: 100%;
+  height: ;/* as its size */
+  background: url(path/to/image1) no-repeat center; /* 1920*xx */
+}
+.big-bg2 { /* 设计人员给的大背景素材，一个页面通常放几行，通常size: 1920*height */
+  width: 100%;
+  height: ;/* as its size */
+  background: url(path/to/image2) no-repeat center; /* 1920*xx */
+}
+.small-pic {
+    /* 具体问题具体分析 */
+}
+/**
+  <div class="img-wrap">
+    <img src="path/to/img" alt="" />
+    <i class="icon"></i>
+  </div>
+*/
+.icon { /* like 左上角的双十二，今日新品 */
+    /* 父元素设置position: relative; 比如上面的img-wrap*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: ;
+  height: ;
+}
+</style>
+</head>
+<body>
+  <!-- 如专题养生 -->
+  <div class="ztys-container"><!-- zt加专题名称简拼加连字符container作为命名空间，防止css冲突-->
+    
+    <div class="top"></div><!-- 大top图 if exists -->
+    <div class="banner"></div><!-- 大banner图 if exists -->
+
+    <div class="wrapper"><!-- 主体内容 -->
+
+      <div class="big-bg1">
+          <!-- content here, always ul>li*n or div>div*n as goods lists -->
+      </div>
+
+      <div class="big-bg2">
+          <!-- content here, always ul>li*n or div>div*n as goods lists -->
+      </div>
+
+      <div class="more-info"><!-- some other info if exists --></div>
+
+    </div>
+
+    <div class="ernai-left-side-nav"><!-- namespace-direction-side-nav  -->
+        <a class="one-floor" href="#"></a><!-- use position absolute(set left and top value) and  -->
+                                 <!-- declear width and height to make 图片按钮 可用.if exists -->
+        <a class="two-floor" href="#"></a>
+        <a class="three-floor" href="#"></a>
+        <a class="four-floor" href="#"></a>
+    </div>
+
+  </div>
+<script>
+    //js here
+</script>  
+</body>
+</html>
